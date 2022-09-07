@@ -1,0 +1,39 @@
+
+{
+    "Chocolates":[
+    {
+        "id":"1,111",
+        "firstName":"Nestle",
+        "lastName":"Kitkat",
+        "quantites_Available":"10gm,20gm,50gm,100gm,",
+        "rate":"10",
+        "companyId":"123"
+    },
+    {
+        "id":"2,222",
+        "firstName":"Cadbury",
+        "lastName":"Dairy Milk",
+        "quantites_Available":"10gm,50gm,100gm,",
+        "rate":"103.22",
+        "companyId":"124"
+    },
+    {
+        "id":"3,3333",
+        "firstName":"Cadbury",
+        "lastName":"Temptations Rum And Raisin",
+        "quantites_Available":"10gm,50gm,",
+        "rate":"545",
+        "companyId":"126"
+    },
+    {
+        "id":"4444",
+        "firstName":"Lindt",
+        "lastName":"Roasted Almost and Caramel Burst",
+        "quantites_Available":"10gm,70gm,100gm,",
+        "rate":"109.43",
+        "companyId":"130"
+    },
+    
+],
+    "Image":"https://m.media-amazon.com/images/I/91qi6PV+XBL._SX425_.jpg",
+}

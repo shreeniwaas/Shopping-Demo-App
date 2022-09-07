@@ -1,0 +1,41 @@
+{
+    "Categories": [
+        {
+            "catName":"BabyFood",
+            "Id":"21"
+        },
+        {
+            "catName":"Chocolates",
+            "Id":"24"
+        },
+        {
+            "catName":"Beverages",
+            "Id":"30"
+        },
+        {
+            "catName":"HouseHold",
+            "Id":"32"
+        },
+        {
+            "catName":"Pharmacy",
+            "Id":"47"
+        },
+        {
+            "catName":"Fresh Meats",
+            "Id":"76"
+        },
+        {
+            "catName":"Frozen Items",
+            "Id": "45"
+        },
+        {
+            "catName":"Snacks",
+            "Id":"02"
+        },
+        {
+            "catName":"Groceries",
+            "Id":34
+        }
+    ],
+    "Image":"https://images.unsplash.com/photo-1608231975456-2f2d9fb1b49b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzI5MzYwNA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Qt-vM-dar">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Shopping_Demo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lIg-AZ-Dw8">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" id="pWW-C1-zfD" customClass="CategoryTableViewCell" customModule="Shopping_Demo_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="320" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pWW-C1-zfD" id="0DU-jy-lYO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mTK-wI-dCq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qae-6r-vZW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lIg-AZ-Dw8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="55j-e2-djG"/>
+                            <constraint firstItem="lIg-AZ-Dw8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GKe-eZ-Ysk"/>
+                            <constraint firstItem="lIg-AZ-Dw8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NR9-wN-ptQ"/>
+                            <constraint firstItem="lIg-AZ-Dw8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XyW-wZ-gim"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uCW-Jl-tZd"/>
+                    <connections>
+                        <outlet property="categoryTableView" destination="lIg-AZ-Dw8" id="BtE-Lk-o2F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013.75" y="82.394366197183103"/>
+        </scene>
+        <!--Product DetailsVC-->
+        <scene sceneID="VM8-5M-DnF">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7VO-03-37N" customClass="ProductDetailsVC" customModule="Shopping_Demo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wPp-IU-yIo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J1p-an-7Pb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListCell" rowHeight="67" id="cx9-Hn-PUP" customClass="FoodListTableViewCell" customModule="Shopping_Demo_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cx9-Hn-PUP" id="Nuh-I5-fXB">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7VO-03-37N" id="Mc0-Fu-reu"/>
+                                    <outlet property="delegate" destination="7VO-03-37N" id="tnH-VZ-4l8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sjl-qk-LXc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sjl-qk-LXc" firstAttribute="bottom" secondItem="J1p-an-7Pb" secondAttribute="bottom" id="4a1-Oj-j53"/>
+                            <constraint firstItem="J1p-an-7Pb" firstAttribute="top" secondItem="Sjl-qk-LXc" secondAttribute="top" id="9lX-X5-w9Y"/>
+                            <constraint firstItem="J1p-an-7Pb" firstAttribute="leading" secondItem="Sjl-qk-LXc" secondAttribute="leading" id="gcP-hw-fhx"/>
+                            <constraint firstItem="Sjl-qk-LXc" firstAttribute="trailing" secondItem="J1p-an-7Pb" secondAttribute="trailing" id="vUA-hs-FxG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodListTable" destination="J1p-an-7Pb" id="bOG-ZY-dvy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckZ-US-jLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2709.375" y="81.338028169014081"/>
+        </scene>
+        <!--Products List Controller-->
+        <scene sceneID="Dqy-pw-v81">
+            <objects>
+                <viewController storyboardIdentifier="ProductsListController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vwg-V0-pT6" customClass="ProductsListController" customModule="Shopping_Demo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pKr-gg-Pqb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nei-Cl-Yjt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eWc-9n-5Hb">
+                                    <size key="itemSize" width="316" height="270"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productCell" id="BH6-87-uvg" customClass="ProductCollectionViewCell" customModule="Shopping_Demo_App" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="316" height="270"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UO9-19-NHq">
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="270"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="316" height="270"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vwg-V0-pT6" id="gS4-KM-e8k"/>
+                                    <outlet property="delegate" destination="vwg-V0-pT6" id="Q6D-W8-pFO"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aHa-DJ-MZd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nei-Cl-Yjt" firstAttribute="leading" secondItem="aHa-DJ-MZd" secondAttribute="leading" id="7oA-Wq-0Ya"/>
+                            <constraint firstItem="aHa-DJ-MZd" firstAttribute="trailing" secondItem="nei-Cl-Yjt" secondAttribute="trailing" id="OJe-zW-JYr"/>
+                            <constraint firstItem="aHa-DJ-MZd" firstAttribute="bottom" secondItem="nei-Cl-Yjt" secondAttribute="bottom" id="Ymm-97-d1z"/>
+                            <constraint firstItem="nei-Cl-Yjt" firstAttribute="top" secondItem="aHa-DJ-MZd" secondAttribute="top" id="ema-7Z-Y5B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="productListCollectionView" destination="nei-Cl-Yjt" id="BAc-NW-Zoi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmG-hO-qOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3397.5" y="81.338028169014081"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NTY-8h-Zob">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Qt-vM-dar" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xb7-Qp-wka">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eHQ-cW-qGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmf-be-Xze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016.25" y="82.394366197183103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

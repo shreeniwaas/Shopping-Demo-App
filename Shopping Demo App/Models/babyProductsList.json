@@ -1,0 +1,38 @@
+
+{
+    "BabyFoods":[
+        {
+            "id":"11,111",
+            "firstName":"Nestle",
+            "lastName":"Cerelac",
+            "quantites_Available": "100gm,200gm,500gm,1000gm,",
+            "rate":"52",
+            "companyId":"123"
+        },
+        {
+            "id":"22,222",
+            "firstName":"Nestle 2",
+            "lastName":"Cerelac 2",
+            "quantites_Available":"100gm,500gm,1000gm,",
+            "rate":"107",
+            "companyId":"124"
+        },
+        {
+            "id":"33,333",
+            "firstName":"Nestle 3",
+            "lastName":"Cerelac 3",
+            "quantites_Available": "100gm,500gm,",
+            "rate":"545",
+            "companyId":"126"
+        },
+        {
+            "id":"44,444",
+            "firstName":"Nestle 4",
+            "lastName":"Cerelac 4",
+            "quantites_Available":"100gm,700gm,1000gm,",
+            "rate":"107.43",
+            "companyId":"130"
+        },
+    ],
+    "Image": "https://image3.mouthshut.com/images/imagesp/925823802s.jpg"
+}
